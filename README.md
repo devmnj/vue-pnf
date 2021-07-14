@@ -1,4 +1,5 @@
-<h3 align="center">@manojap/vue-pnf</h3>
+
+<h3 align="center">vue-pnf</h3>
 
 <div align="center">
 
@@ -11,99 +12,80 @@
 
 ---
 
-<p align="center"> Few lines describing your project.
-    <br> 
+<p align="center">  
+A Vue library consisting of one or more component for showing Page Not Found / 404.
+    <br>
 </p>
+
+<img src="./404.png"/>
 
 ## 📝 Table of Contents
 
-- [About](#about)
-- [Getting Started](#getting_started)
-- [Deployment](#deployment)
-- [Usage](#usage)
-- [Built Using](#built_using)
-- [TODO](../TODO.md)
-- [Contributing](../CONTRIBUTING.md)
-- [Authors](#authors)
-- [Acknowledgments](#acknowledgement)
+
+- [📝 Table of Contents](#-table-of-contents)
+- [🧐 About <a name = "about"></a>](#-about-)
+- [🏁 Components <a name = "components"></a>](#-components-)
+- [🎈Prerequisites](#prerequisites)
+- [🎈Installing](#installing)
+- [🎈 Usage <a name="usage"></a>](#-usage-)
+- [⛏️ Built Using <a name = "built_using"></a>](#️-built-using-)
+- [✍️ Authors <a name = "authors"></a>](#️-authors-)
+ 
 
 ## 🧐 About <a name = "about"></a>
 
-Write about 1-2 paragraphs describing the purpose of your project.
+A set of components for showing error page or 404 in Vuejs project.
 
-## 🏁 Getting Started <a name = "getting_started"></a>
+## 🏁 Components <a name = "components"></a>
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
+This library includes following components
 
-### Prerequisites
+- **Animated**, an animate 404 Page with CSS animation
 
-What things you need to install the software and how to install them.
+## 🎈Prerequisites
 
-```
-Give examples
-```
+- Nodejs
+- Vuejs
 
-### Installing
+## 🎈Installing
 
-A step by step series of examples that tell you how to get a development env running.
+You can install the package from NPM registry or from github packages registry
 
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo.
-
-## 🔧 Running the tests <a name = "tests"></a>
-
-Explain how to run the automated tests for this system.
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
+```bash
+npm i --save @codehat/vue-pnf
 ```
 
 ## 🎈 Usage <a name="usage"></a>
 
-Add notes about how to use the system.
+Here is simple usage
 
-## 🚀 Deployment <a name = "deployment"></a>
+```javascript
+<template>
+  <div class="home">
+    <v-404/>     
+  </div>
+</template>
+<script>
+```
 
-Add additional notes about how to deploy this on a live system.
+```javascript
+import { Animated } from "@codehat/vue-pnf";
+export default {  
+  components: {
+ "v-404": Animated,    
+  },
+};
+</script>
+
+```
+ 
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 
-- [MongoDB](https://www.mongodb.com/) - Database
-- [Express](https://expressjs.com/) - Server Framework
 - [VueJs](https://vuejs.org/) - Web Framework
 - [NodeJs](https://nodejs.org/en/) - Server Environment
 
 ## ✍️ Authors <a name = "authors"></a>
 
-- [@kylelobo](https://github.com/kylelobo) - Idea & Initial work
-
-See also the list of [contributors](https://github.com/kylelobo/The-Documentation-Compendium/contributors) who participated in this project.
-
-## 🎉 Acknowledgements <a name = "acknowledgement"></a>
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- References
+- [@manojap](https://github.com/manojap) - Idea & Initial work
+ 
